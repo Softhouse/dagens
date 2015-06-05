@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(241, 241, 241);
+  color: rgb(76, 76, 76);
+  line-height: 1.5;
+  margin: 0 auto;
+  width: 96%;
+  padding-bottom: 0px;
+  max-width: 1180px;
+
+  font-family: Open Sans, Helvetica, Arial, sans-serif;
+}
+
+.container {
+  animation-name: fadein;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  -webkit-animation-name: fadein;
+  -webkit-animation-duration: .5s;
+  -webkit-animation-iteration-count: 1;
+}
+
+a {
+  color: rgb(52, 152, 219);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 2.4em;
+}
+
+h1, h2 {
+  font-weight: 300;
+}
+
+.loading-icon {
+  width: 32px;
+  margin: 0 auto;
+}
+
+.loading-icon img {
+  width: 32px;
+  height: 32px;
+}
+
+.restaurant-panel {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+  margin: 0;
+  width: 100%;
+  font-size: .9em;
+}
+
+.restaurant-panel a {
+    color: rgb(41, 128, 185);
+}
+
+.heading {
+  height: 50px;
+}
+
+.main {
+  padding: 20px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+
+footer {
+  font-size: .8em;
+  margin: 10px 0;
+}
+
+footer img {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 4px;
+}
+
+.github, .last-updated {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 960px) {
+  .restaurant-panel {
+    width: 20%;
+  }
+
+  .github {
+    float: right;
+    text-align: right;
+    width: 50%;
+  }
+
+  .last-updated {
+    text-align: left;
+    width: 50%;
+  }
+}
+
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+        -webkit-transform: translateY(-40px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px)
+    }
+}
+
+@-moz-keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+        -webkit-transform: translateY(-40px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px)
+    }
+}
+
+@-o-keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+        -webkit-transform: translateY(-40px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px)
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+        -webkit-transform: translateY(-40px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px)
+    }
+}
